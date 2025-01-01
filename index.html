@@ -1,174 +1,136 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky Pirates Haven - دليل بلوكس فروت</title>
+    <title>Blox Fruits Beginner's Guide</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
+            margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #eaf1f9;
-            color: #333;
+            background: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #fff;
         }
 
         header {
-            background-color: #1a2b40;
-            color: white;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header .logo h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #ff6347;
-        }
-
-        section {
-            padding: 50px 40px;
+            background-color: #222;
+            padding: 20px;
             text-align: center;
-            background: linear-gradient(135deg, #f9f9f9, #f0f4f8);
-            margin-bottom: 30px;
-            border-radius: 8px;
         }
 
-        #home {
-            background-image: url('https://example.com/background.jpg');
-            background-size: cover;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #fdbb2d;
         }
 
-        h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        #tutorials .tutorials-container {
+        nav {
             display: flex;
             justify-content: center;
             gap: 20px;
+            margin-top: 10px;
         }
 
-        .tutorial {
-            background-color: #fff;
-            border-radius: 10px;
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fdbb2d;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://example.com/pirate-background.jpg') no-repeat center/cover;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .section {
+            background: rgba(0, 0, 0, 0.8);
             padding: 20px;
-            width: 250px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         }
 
-        .tutorial:hover {
-            transform: translateY(-10px);
+        .section img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .section h3 {
+            margin: 10px 0;
+            color: #fdbb2d;
         }
 
         footer {
-            background-color: #1a2b40;
-            color: white;
-            padding: 15px;
+            background-color: #111;
+            padding: 20px;
             text-align: center;
-            font-size: 1.1em;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-
-        ul li::before {
-            content: '✔️';
-            margin-right: 10px;
-            color: #ff6347;
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Sky Pirates Haven</h1>
-        </div>
+        <h1>Blox Fruits Beginner's Guide</h1>
         <nav>
-            <ul>
-                <li><a href="#home">الصفحة الرئيسية</a></li>
-                <li><a href="#tutorials">الدروس</a></li>
-                <li><a href="#map">الخريطة</a></li>
-                <li><a href="#tips">نصائح</a></li>
-            </ul>
+            <a href="#how-to-start">How to Start</a>
+            <a href="#quests">Quests</a>
+            <a href="#tips">Tips & Tricks</a>
         </nav>
     </header>
 
-    <section id="home">
-        <div class="intro">
-            <h2>مرحبًا بك في Sky Pirates Haven!</h2>
-            <p>أفضل مكان للاعبين الجدد في بلوكس فروت لتعلم المهارات والنصائح لتحقيق النجاح!</p>
+    <div class="hero">
+        <h2>Welcome to the Ultimate Guide!</h2>
+        <p>Learn everything you need to know to get started with Blox Fruits, from leveling up to defeating powerful bosses!</p>
+    </div>
+
+    <div class="sections">
+        <div class="section" id="how-to-start">
+            <img src="https://example.com/icon-start.png" alt="How to Start">
+            <h3>How to Start</h3>
+            <p>A beginner's guide to starting your adventure in Blox Fruits.</p>
         </div>
-    </section>
-
-    <section id="tutorials">
-        <h2>الدروس للمبتدئين</h2>
-        <div class="tutorials-container">
-            <div class="tutorial">
-                <h3>اختيار الفاكهة</h3>
-                <p>تعلم كيفية اختيار الفاكهة المناسبة للعبتك واستراتيجيتك.</p>
-            </div>
-            <div class="tutorial">
-                <h3>أساسيات القتال</h3>
-                <p>خطوات القتال الأساسية التي ستساعدك في الفوز ضد الأعداء.</p>
-            </div>
+        <div class="section" id="quests">
+            <img src="https://example.com/icon-quests.png" alt="Quests">
+            <h3>Quests for Beginners</h3>
+            <p>Complete these quests to level up quickly and earn rewards.</p>
         </div>
-    </section>
-
-    <section id="map">
-        <h2>استكشف الخريطة</h2>
-        <p>تعرّف على الأماكن المهمة في اللعبة من خلال الخريطة التفاعلية.</p>
-    </section>
-
-    <section id="tips">
-        <h2>نصائح واستراتيجيات</h2>
-        <ul>
-            <li>افحص المواقع للحصول على أفضل الفواكه.</li>
-            <li>حاول دائمًا تعزيز مستواك باستخدام المهام اليومية.</li>
-        </ul>
-    </section>
+        <div class="section" id="tips">
+            <img src="https://example.com/icon-tips.png" alt="Tips">
+            <h3>Advanced Tips</h3>
+            <p>Learn pro strategies to dominate the seas and become the strongest!</p>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Sky Pirates Haven. جميع الحقوق محفوظة.</p>
+        <p>&copy; 2025 Blox Fruits Guide. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
