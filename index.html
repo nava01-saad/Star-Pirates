@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Pirates</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #001f3f;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #002b5c;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            padding: 15px 30px;
+            background: #ffcc00;
+            color: #002b5c;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .buttons a:hover {
+            background: #ffd633;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            background: #003f7f;
+        }
+
+        .section {
+            text-align: center;
+            background: #00509e;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .section h3 {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Star Pirates</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#guide">Guide</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to Star Pirates</h1>
+        <p>Your ultimate guide to exploring the seas of adventure!</p>
+        <div class="buttons">
+            <a href="#how-to-start">How to Start</a>
+            <a href="#advanced-tips">Advanced Tips</a>
+        </div>
+    </section>
+
+    <section class="sections">
+        <div class="section">
+            <img src="https://via.placeholder.com/200" alt="How to Start">
+            <h3>How to Start</h3>
+        </div>
+        <div class="section">
+            <img src="https://via.placeholder.com/200" alt="Quests for Beginners">
+            <h3>Quests for Beginners</h3>
+        </div>
+        <div class="section">
+            <img src="https://via.placeholder.com/200" alt="Advanced Tips">
+            <h3>Advanced Tips</h3>
+        </div>
+        <div class="section">
+            <img src="https://via.placeholder.com/200" alt="Map Guide">
+            <h3>Map Guide</h3>
+        </div>
+    </section>
+</body>
+</html>
