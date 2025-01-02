@@ -79,11 +79,38 @@
             font-size: 24px;
             display: inline-block;
             margin: 20px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .button-large:hover {
             background-color: #007a99;
+            transform: scale(1.1);
+        }
+
+        .button-large:active {
+            transform: scale(0.95);
+        }
+
+        /* زر خريطة الماب */
+        .map-button {
+            background-color: #0099cc; /* نفس اللون مثل الأزرار الأخرى */
+            color: #fff;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 24px;
+            display: inline-block;
+            margin: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .map-button:hover {
+            background-color: #007a99;
+            transform: scale(1.1);
+        }
+
+        .map-button:active {
+            transform: scale(0.95);
         }
 
         footer {
@@ -112,7 +139,7 @@
         <li><a href="#intro">مقدمة</a></li>
         <li><a href="#tips">نصائح</a></li>
         <li><a href="#guides">أدلة اللعبة</a></li>
-        <li><a href="#contact">اتصل بنا</a></li>
+        <li><a href="#map">خريطة الماب</a></li>
     </ul>
 </nav>
 
@@ -125,11 +152,17 @@
     <section id="tips" class="content-section">
         <h2>نصائح هيدرو للعبة</h2>
         <p>إليك بعض النصائح التي ستساعدك في التقدم بسرعة في اللعبة:</p>
-        <!-- الأزرار الكبيرة -->
         <a href="tip1.html" class="button-large">نصيحة 1: فواكه الشيطان</a>
         <a href="tip2.html" class="button-large">نصيحة 2: تدريب القتال</a>
         <a href="tip3.html" class="button-large">نصيحة 3: الأماكن المخفية</a>
         <a href="tip4.html" class="button-large">نصيحة 4: المهام اليومية</a>
+    </section>
+
+    <!-- زر خريطة الماب فوق دليل المراحل -->
+    <section id="map" class="content-section">
+        <h2>خريطة الماب</h2>
+        <p>اضغط على الزر أدناه للوصول إلى خريطة الماب التي تحتوي على تفاصيل العوالم المختلفة في بلوكس فروت:</p>
+        <a href="map.html" class="map-button">عرض خريطة الماب</a>
     </section>
 
     <section id="guides" class="content-section">
@@ -149,6 +182,9 @@
     </section>
 </div>
 
+<footer>
+    <p>&copy; 2025 دليل بلوكس فروت. جميع الحقوق محفوظة.</p>
+</footer>
 
 </body>
 </html>
