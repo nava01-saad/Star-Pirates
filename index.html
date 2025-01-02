@@ -1,165 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blox Fruits Beginner's Guide</title>
+    <title>دليل بلوكس فروت - الموقع التعليمي</title>
     <style>
         body {
-            margin: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2d);
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
             color: #fff;
         }
-
+        
         header {
-            background: url('https://via.placeholder.com/1920x300.png?text=Pirate+Adventure') no-repeat center/cover;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            position: relative;
+            background-color: #0099cc;
+            padding: 20px;
+            text-align: center;
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 40px;
             margin: 0;
-            color: #fdbb2d;
-        }
-
-        header img {
-            position: absolute;
-            bottom: -50px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            color: #fff;
         }
 
         nav {
-            margin-top: 15px;
-            display: flex;
-            gap: 20px;
+            background-color: #333;
+            padding: 10px 0;
         }
 
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.2rem;
-            padding: 10px 20px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        nav a:hover {
-            background: #fdbb2d;
-            color: #111;
-            transform: scale(1.1);
-        }
-
-        .hero {
+        nav ul {
+            list-style-type: none;
+            padding: 0;
             text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x300.png?text=Hero+Section') no-repeat center/cover;
         }
 
-        .hero h2 {
-            font-size: 3rem;
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .content-section {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: auto;
+        .content-section h2 {
+            color: #0099cc;
+            font-size: 30px;
         }
 
-        .sections {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 40px;
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.6;
         }
 
-        .section {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
+        .button-large {
+            background-color: #0099cc;
+            color: #fff;
+            padding: 20px 40px;
+            text-decoration: none;
             border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 24px;
+            display: inline-block;
+            margin: 20px;
+            transition: background-color 0.3s;
         }
 
-        .section:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-        }
-
-        .section img {
-            max-width: 100px;
-            margin-bottom: 10px;
-        }
-
-        .section h3 {
-            margin: 10px 0;
-            color: #fdbb2d;
+        .button-large:hover {
+            background-color: #007a99;
         }
 
         footer {
-            background-color: #111;
-            padding: 20px;
+            background-color: #333;
+            color: #fff;
             text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
 
         footer p {
-            margin: 0;
-            font-size: 0.9rem;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Blox Fruits Beginner's Guide</h1>
-        <img src="https://i.pinimg.com/736x/87/36/41/873641f09fe10ea3f592de9abc4da3b3.jpg" alt="Pirate Character">
-        <nav>
-            <a href="#how-to-start">How to Start</a>
-            <a href="#quests">Quests</a>
-            <a href="#tips">Tips & Tricks</a>
-        </nav>
-    </header>
 
-    <div class="hero">
-        <h2>Welcome to the Ultimate Guide!</h2>
-        <p>Learn everything you need to know to get started with Blox Fruits, from leveling up to defeating powerful bosses!</p>
-    </div>
+<header>
+    <h1>دليل بلوكس فروت - موقع تعليمي</h1>
+</header>
 
-    <div class="sections">
-        <div class="section" id="how-to-start">
-            <img src="https://via.placeholder.com/100.png?text=Start" alt="How to Start">
-            <h3>How to Start</h3>
-            <p>A beginner's guide to starting your adventure in Blox Fruits.</p>
-        </div>
-        <div class="section" id="quests">
-            <img src="https://via.placeholder.com/100.png?text=Quests" alt="Quests">
-            <h3>Quests for Beginners</h3>
-            <p>Complete these quests to level up quickly and earn rewards.</p>
-        </div>
-        <div class="section" id="tips">
-            <img src="https://via.placeholder.com/100.png?text=Tips" alt="Tips">
-            <h3>Advanced Tips</h3>
-            <p>Learn pro strategies to dominate the seas and become the strongest!</p>
-        </div>
-    </div>
+<nav>
+    <ul>
+        <li><a href="#intro">مقدمة</a></li>
+        <li><a href="#tips">نصائح</a></li>
+        <li><a href="#guides">أدلة اللعبة</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+    </ul>
+</nav>
 
-    <footer>
-        <p>&copy; 2025 Blox Fruits Guide. All Rights Reserved.</p>
-    </footer>
+<div class="container">
+    <section id="intro" class="content-section">
+        <h2>مقدمة عن بلوكس فروت</h2>
+        <p>بلوكس فروت هي لعبة مغامرات رائعة على Roblox، حيث يمكن للاعبين استكشاف عوالم مختلفة، القتال ضد الأعداء، وتطوير شخصياتهم للحصول على قوى خارقة. في هذا الموقع، ستتعلم كل ما تحتاجه لتصبح محترفًا في اللعبة!</p>
+    </section>
+
+    <section id="tips" class="content-section">
+        <h2>نصائح هيدرو للعبة</h2>
+        <p>إليك بعض النصائح التي ستساعدك في التقدم بسرعة في اللعبة:</p>
+        <!-- الأزرار الكبيرة -->
+        <a href="tip1.html" class="button-large">نصيحة 1: فواكه الشيطان</a>
+        <a href="tip2.html" class="button-large">نصيحة 2: تدريب القتال</a>
+        <a href="tip3.html" class="button-large">نصيحة 3: الأماكن المخفية</a>
+        <a href="tip4.html" class="button-large">نصيحة 4: المهام اليومية</a>
+    </section>
+
+    <section id="guides" class="content-section">
+        <h2>دليل المراحل</h2>
+        <p>إليك بعض الأدلة التي ستساعدك في اجتياز المراحل الصعبة:</p>
+        <ol>
+            <li>ابدأ بالمراحل السهلة أولاً لتكتسب الخبرة وتتعلم أساسيات اللعبة.</li>
+            <li>استفد من المهام اليومية للحصول على مكافآت خاصة.</li>
+            <li>تعلم من الآخرين! يمكنك متابعة نصائح المحترفين في المنتديات أو على اليوتيوب.</li>
+        </ol>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>اتصل بنا</h2>
+        <p>إذا كنت بحاجة إلى أي مساعدة أو لديك أسئلة، لا تتردد في الاتصال بنا عبر البريد الإلكتروني:</p>
+        <a href="mailto:support@blocksfruit.com" class="button-large">اتصل بنا الآن</a>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 دليل بلوكس فروت. جميع الحقوق محفوظة.</p>
+</footer>
+
 </body>
 </html>
