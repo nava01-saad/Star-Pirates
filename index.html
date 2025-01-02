@@ -22,12 +22,24 @@
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
         }
 
         header h1 {
             font-size: 3rem;
             margin: 0;
             color: #fdbb2d;
+        }
+
+        header img {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         }
 
         nav {
@@ -115,6 +127,7 @@
 <body>
     <header>
         <h1>Blox Fruits Beginner's Guide</h1>
+        <img src="https://via.placeholder.com/150.png?text=Character" alt="Pirate Character">
         <nav>
             <a href="#how-to-start">How to Start</a>
             <a href="#quests">Quests</a>
