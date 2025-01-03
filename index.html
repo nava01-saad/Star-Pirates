@@ -123,6 +123,27 @@
             margin-right: 10px;
             color: #ff6347;
         }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: white; /* اللون الأبيض */
+            color: #333; /* لون النص */
+            border: 2px solid #333; /* إضافة خط حول الزر */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #333; /* تغيير اللون إلى رمادي داكن عند التمرير */
+            color: white; /* تغيير لون النص إلى الأبيض */
+        }
     </style>
 </head>
 <body>
@@ -134,8 +155,8 @@
             <ul>
                 <li><a href="#home">الصفحة الرئيسية</a></li>
                 <li><a href="#tutorials">الدروس</a></li>
-                <li><a href="#map">الخريطة</a></li>
-                <li><a href="#tips">نصائح</a></li>
+                <li><a href="#fruit-reviews">مراجعات الفواكه</a></li>
+                <li><a href="#tips">نصائح واستراتيجيات</a></li>
             </ul>
         </nav>
     </header>
@@ -161,9 +182,12 @@
         </div>
     </section>
 
-    <section id="map">
-        <h2>استكشف الخريطة</h2>
-        <p>تعرّف على الأماكن المهمة في اللعبة من خلال الخريطة التفاعلية.</p>
+    <section id="fruit-reviews">
+        <h2>مراجعات الفواكه</h2>
+        <div class="button-container">
+            <a href="devil-fruit-review.html" class="btn">مراجعة فواكه الشيطان</a>
+            <a href="rare-fruit-review.html" class="btn">الفواكه النادرة</a>
+        </div>
     </section>
 
     <section id="tips">
@@ -171,6 +195,9 @@
         <ul>
             <li>افحص المواقع للحصول على أفضل الفواكه.</li>
             <li>حاول دائمًا تعزيز مستواك باستخدام المهام اليومية.</li>
+            <li>تحقق من مهام الصيادين للحصول على مكافآت إضافية.</li>
+            <li>تأكد من جمع كل العناصر المهمة أثناء مغامرتك.</li>
+            <li>استخدم أساليب اللعبة المختلفة حسب المواقف لتحقيق أقصى فائدة.</li>
         </ul>
     </section>
 
