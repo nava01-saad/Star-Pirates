@@ -3,188 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل بلوكس فروت - الموقع التعليمي</title>
+    <title>Sky Pirates Haven - دليل بلوكس فروت</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
-            color: #fff;
+            box-sizing: border-box;
         }
-        
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eaf1f9;
+            color: #333;
+        }
+
         header {
-            background-color: #0099cc;
-            padding: 20px;
-            text-align: center;
+            background-color: #1a2b40;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        header h1 {
-            font-size: 40px;
+        header .logo h1 {
             margin: 0;
-            color: #fff;
-        }
-
-        nav {
-            background-color: #333;
-            padding: 10px 0;
+            font-size: 2em;
         }
 
         nav ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
-            text-align: center;
+            margin: 0;
+            display: flex;
         }
 
         nav ul li {
-            display: inline;
-            margin: 0 15px;
+            margin-left: 20px;
         }
 
         nav ul li a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
+        nav ul li a:hover {
+            color: #ff6347;
         }
 
-        .content-section {
-            background-color: #222;
-            padding: 20px;
-            border-radius: 10px;
+        section {
+            padding: 50px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #f9f9f9, #f0f4f8);
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        #home {
+            background-image: url('https://example.com/background.jpg');
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        h2 {
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
 
-        .content-section h2 {
-            color: #0099cc;
-            font-size: 30px;
+        #tutorials .tutorials-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
-        .content-section p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .button-large {
-            background-color: #0099cc;
-            color: #fff;
-            padding: 20px 40px;
-            text-decoration: none;
+        .tutorial {
+            background-color: #fff;
             border-radius: 10px;
-            font-size: 24px;
-            display: inline-block;
-            margin: 20px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .button-large:hover {
-            background-color: #007a99;
-            transform: scale(1.1);
-        }
-
-        .button-large:active {
-            transform: scale(0.95);
-        }
-
-        /* زر خريطة الماب */
-        .map-button {
-            background-color: #0099cc; /* نفس اللون مثل الأزرار الأخرى */
-            color: #fff;
-            padding: 20px 40px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
             text-decoration: none;
-            border-radius: 10px;
-            font-size: 24px;
-            display: inline-block;
-            margin: 20px;
-            transition: background-color 0.3s, transform 0.3s;
+            color: #333;
         }
 
-        .map-button:hover {
-            background-color: #007a99;
-            transform: scale(1.1);
+        .tutorial:hover {
+            transform: translateY(-10px);
         }
 
-        .map-button:active {
-            transform: scale(0.95);
+        .tutorial h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #1a2b40;
+            color: white;
+            padding: 15px;
             text-align: center;
-            padding: 15px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            font-size: 1.1em;
         }
 
-        footer p {
-            font-size: 12px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        ul li::before {
+            content: '✔️';
+            margin-right: 10px;
+            color: #ff6347;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>Sky Pirates Haven</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">الصفحة الرئيسية</a></li>
+                <li><a href="#tutorials">الدروس</a></li>
+                <li><a href="#map">الخريطة</a></li>
+                <li><a href="#tips">نصائح</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>دليل بلوكس فروت - موقع تعليمي</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="#intro">مقدمة</a></li>
-        <li><a href="#tips">نصائح</a></li>
-        <li><a href="#guides">أدلة اللعبة</a></li>
-        <li><a href="#map">خريطة الماب</a></li>
-    </ul>
-</nav>
-
-<div class="container">
-    <section id="intro" class="content-section">
-        <h2>مقدمة عن بلوكس فروت</h2>
-        <p>بلوكس فروت هي لعبة مغامرات رائعة على Roblox، حيث يمكن للاعبين استكشاف عوالم مختلفة، القتال ضد الأعداء، وتطوير شخصياتهم للحصول على قوى خارقة. في هذا الموقع، ستتعلم كل ما تحتاجه لتصبح محترفًا في اللعبة!</p>
+    <section id="home">
+        <div class="intro">
+            <h2>مرحبًا بك في Sky Pirates Haven!</h2>
+            <p>أفضل مكان للاعبين الجدد في بلوكس فروت لتعلم المهارات والنصائح لتحقيق النجاح!</p>
+        </div>
     </section>
 
-    <section id="tips" class="content-section">
-        <h2>نصائح هيدرو للعبة</h2>
-        <p>إليك بعض النصائح التي ستساعدك في التقدم بسرعة في اللعبة:</p>
-        <a href="tip1.html" class="button-large">نصيحة 1: فواكه الشيطان</a>
-        <a href="tip2.html" class="button-large">نصيحة 2: تدريب القتال</a>
-        <a href="tip3.html" class="button-large">نصيحة 3: الأماكن المخفية</a>
-        <a href="tip4.html" class="button-large">نصيحة 4: المهام اليومية</a>
+    <section id="tutorials">
+        <h2>الدروس للمبتدئين</h2>
+        <div class="tutorials-container">
+            <a href="fruit-lesson.html" class="tutorial"> <!-- رابط الصفحة الأولى -->
+                <h3>اختيار الفاكهة</h3>
+                <p>تعلم كيفية اختيار الفاكهة المناسبة للعبتك واستراتيجيتك.</p>
+            </a>
+            <a href="combat-basics.html" class="tutorial"> <!-- رابط الصفحة الثانية -->
+                <h3>أساسيات القتال</h3>
+                <p>خطوات القتال الأساسية التي ستساعدك في الفوز ضد الأعداء.</p>
+            </a>
+        </div>
     </section>
 
-    <!-- زر خريطة الماب فوق دليل المراحل -->
-    <section id="map" class="content-section">
-        <h2>خريطة الماب</h2>
-        <p>اضغط على الزر أدناه للوصول إلى خريطة الماب التي تحتوي على تفاصيل العوالم المختلفة في بلوكس فروت:</p>
-        <a href="map.html" class="map-button">عرض خريطة الماب</a>
+    <section id="map">
+        <h2>استكشف الخريطة</h2>
+        <p>تعرّف على الأماكن المهمة في اللعبة من خلال الخريطة التفاعلية.</p>
     </section>
 
-    <section id="guides" class="content-section">
-        <h2>دليل المراحل</h2>
-        <p>إليك بعض الأدلة التي ستساعدك في اجتياز المراحل الصعبة:</p>
-        <ol>
-            <li>ابدأ بالمراحل السهلة أولاً لتكتسب الخبرة وتتعلم أساسيات اللعبة.</li>
-            <li>استفد من المهام اليومية للحصول على مكافآت خاصة.</li>
-            <li>تعلم من الآخرين! يمكنك متابعة نصائح المحترفين في المنتديات أو على اليوتيوب.</li>
-        </ol>
+    <section id="tips">
+        <h2>نصائح واستراتيجيات</h2>
+        <ul>
+            <li>افحص المواقع للحصول على أفضل الفواكه.</li>
+            <li>حاول دائمًا تعزيز مستواك باستخدام المهام اليومية.</li>
+        </ul>
     </section>
 
-    <section id="contact" class="content-section">
-        <h2>اتصل بنا</h2>
-        <p>إذا كنت بحاجة إلى أي مساعدة أو لديك أسئلة، لا تتردد في الاتصال بنا عبر البريد الإلكتروني:</p>
-        <a href="mailto:support@blocksfruit.com" class="button-large">اتصل بنا الآن</a>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2025 دليل بلوكس فروت. جميع الحقوق محفوظة.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 Sky Pirates Haven. جميع الحقوق محفوظة.</p>
+    </footer>
 </body>
 </html>
